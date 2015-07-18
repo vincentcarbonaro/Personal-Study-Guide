@@ -1,0 +1,45 @@
+<!-- To-do List
+Make a simple program to create a to-do list.
+* The user should be able to type in text and press a button to add it to a simple to-do list.
+* Each item in the list should have a button or link to remove itself from the list.  -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TODO List</title>
+    <script type="text/javascript" src="../jquery-2.1.3.min.js"></script>
+  </head>
+  <body>
+
+    <h1 style="text-decoration: underline">TODO List</h1>
+
+    <input type="text" name="name" value="">
+    <input type="button" name="name" value="Submit">
+    <ul></ul>
+
+
+
+    <script type="text/javascript">
+      $(function () {
+
+        $('input').last().click(function () {
+
+          if($('input').first().val() != "") {
+            $('ul').append("<li>" + $('input').first().val() + " <a href='#'>x</a></li>")
+
+            $('a').last().click(function () {
+              this.parentElement.remove();
+            })
+
+          } else {
+            alert('Cannot add an empty string!')
+          }
+
+        });
+
+      })
+    </script>
+
+  </body>
+</html>
