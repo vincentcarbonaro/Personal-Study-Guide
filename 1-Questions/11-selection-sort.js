@@ -1,10 +1,10 @@
-# Implement Selection Sort
+// Implement Selection Sort
 
-def sel_sort(arr)
-end
+function selSort(arr) {
+}
 
-puts
-puts "[] - #{sel_sort([]) == []}"
-puts "[9,8,6,1,2,5,4,3,9,50,12,11] - #{sel_sort([9,8,6,1,2,5,4,3,9,50,12,11]) == [1,2,3,4,5,6,8,9,9,11,12,50]}"
-puts "[3,7,8,5,2,1,9,5,4] - #{sel_sort([3,7,8,5,2,1,9,5,4]) == [1,2,3,4,5,5,7,8,9]}"
-puts
+console.log();
+console.log( JSON.stringify( selSort([]) ) == JSON.stringify([]) );
+console.log( JSON.stringify( selSort([9,8,6,1,2,5,4,3,9,50,12,11]) ) == JSON.stringify([1,2,3,4,5,6,8,9,9,11,12,50] ) );
+console.log( JSON.stringify( selSort([3,7,8,5,2,1,9,5,4]) ) == JSON.stringify([1,2,3,4,5,5,7,8,9] ) );
+console.log();
