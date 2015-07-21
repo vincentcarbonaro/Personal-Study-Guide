@@ -1,5 +1,7 @@
 // Implement a function that will generate subsets of an arr
 
+// FIX THIS. MAKE IT PONKEY PATCH
+
 function subsets(array) {
 
   if (array.length === 0) {
